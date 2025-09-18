@@ -1,0 +1,45 @@
+/* Container principal */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Layout Header + Main + Footer */
+header,
+footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Links no Header e Footer */
+header a,
+footer a {
+  color: white;
+  margin-right: 1rem;
+}
+
+/* Estilo geral para forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input,
+button {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

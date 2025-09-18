@@ -1,0 +1,30 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Variáveis globais */
+:root {
+  --primary-color: #6b5b95; /* roxo SowzaTech */
+  --secondary-color: #f67280;
+  --background-color: #f8f8f8;
+  --text-color: #333;
+}

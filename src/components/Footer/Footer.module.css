@@ -1,0 +1,180 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  padding: 40px 20px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, minmax(180px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* Marca à esquerda */
+.column:first-child {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.column:first-child h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.column:first-child p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Colunas centrais: Links Rápidos, Contato, Neteslen */
+.column:not(:first-child) {
+  text-align: center;
+}
+
+/* Títulos das colunas */
+.column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #805ad5;
+  text-align: center;
+}
+
+.column p {
+  margin: 0 0 8px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  margin-bottom: 6px;
+}
+
+.column a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.column a:hover {
+  color: #fff;
+}
+
+/* Social icons */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.social a {
+  font-size: 1.3rem;
+  color: #f1f1f1;
+  transition: color 0.3s;
+}
+
+.social a:hover {
+  color: #805ad5;
+}
+
+/* Newsletter */
+.newsForm {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.newsForm input {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.newsForm button {
+  padding: 6px 12px;
+  background-color: #805ad5;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsForm button:hover {
+  background-color: #6b46c1;
+}
+
+/* Pagamentos e segurança */
+.extra {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.payments {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+}
+
+.payments span {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.security p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Linha inferior */
+.bottom {
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  .column:first-child {
+    text-align: center;
+    align-items: center;
+  }
+  .extra {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+}
